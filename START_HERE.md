@@ -1,6 +1,6 @@
 # Start here — your first agent
 
-Welcome. You just scaffolded **Skill Gap Agent** with the **Claude Agent SDK (TypeScript)**.
+Welcome. You just scaffolded **Career Analysis Agent** with the **Claude Agent SDK (TypeScript)**.
 This file is your 60-second guide. Read top to bottom, then delete it.
 
 ---
@@ -46,7 +46,7 @@ That's the loop: **prompt → Claude edits → you run → repeat.**
 - `.env.local` — your secrets (never commit)
 - `.codenow/agent-studio/prompts/` — versioned system prompts
 - `.codenow/agent-studio/evals/` — smoke tests
-- `.codenow/agent-studio/agents/skill-gap-agent.json` — manifest (what gets published to Agent21)
+- `.codenow/agent-studio/agents/career-analysis-agent.json` — manifest (what gets published to Agent21)
 
 ## Next steps
 
@@ -59,7 +59,7 @@ Stuck? Ask Claude in the terminal. That's the whole point of this IDE.
 
 ---
 
-*Description:* Analyze the career analysis produced for an Indian student and identify the student's most important skill gaps for their target technology role. Prioritize gaps based on importance to the target role, current evidence, and practical learning sequence. For each gap, explain what the student needs to learn, why it matters, and what concrete evidence or task would demonstrate proficiency. Do not invent student skills, qualifications, experience, or job requirements. Clearly distinguish verified st
+*Description:* Analyze an Indian student's education, skills, projects, resume information, and target technology role. Identify the skills required for the target role, compare them with the student's demonstrated skills, identify specific skill gaps, explain those gaps clearly, and produce a prioritized list of skills the student should develop. Do not invent qualifications, skills, or job requirements. Clearly distinguish information provided by the student from reasonable assumptions.
 *Kit docs:* https://docs.claude.com/en/api/agent-sdk/overview
 
 ---

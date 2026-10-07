@@ -5,7 +5,7 @@
 // Run with custom prompt: tsx agent.ts "your prompt here"
 // Requires: ANTHROPIC_API_KEY in .env (or .env.local) at the project root.
 //
-// Every run is recorded to .codenow/runs/skill-gap-agent/ (JSONL) so you can replay
+// Every run is recorded to .codenow/runs/career-analysis-agent/ (JSONL) so you can replay
 // it in the AgentFoundry IDE's Runs tab. The recorder fails silently — it will
 // never break your agent.
 //
@@ -33,7 +33,7 @@ import { record } from "./recorder";
 import { loadSidecarSystemPrompt } from "./sidecar";
 
 const DEFAULT_PROMPT = "List the files in this directory and tell me what kind of project this is.";
-const SLUG = "skill-gap-agent";
+const SLUG = "career-analysis-agent";
 
 async function main() {
   const prompt = process.argv[2] || DEFAULT_PROMPT;
